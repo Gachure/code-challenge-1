@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(214, 190, 190);
+  }
+  
+  h1 {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  input,
+  button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  
+  #grade {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 3rem;
+  }
