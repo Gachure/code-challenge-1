@@ -1,0 +1,20 @@
+body {
+  background-color: bisque;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center
+}
+
+label {
+    margin-right: 10px;
+}
+
+button{
+    background-color: aqua;
+}
+
+#result {
+    margin-top: 20px;
+    font-weight: bold;
+}
