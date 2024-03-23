@@ -1,22 +1,35 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: rgb(214, 190, 190);
+	background-color: black; 
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+	height: 100vh; 
+	margin: 0;
   }
   
-  h1 {
-    text-align: center;
-    margin-top: 50px;
+  .container {
+	text-align: center;
+	padding: 20px;
+	border: 2px solid white;
+	
   }
   
-  input,
+  h2 {
+	font-size: 2em; 
+	color: white; 
+  }
+  
+  input[type="number"] {
+	width: 100px; 
+  }
+  
   button {
-    display: block;
-    margin: 0 auto;
-    margin-top: 50px;
+	padding: 10px 20px;
+	font-size: 1em; 
   }
   
-  #grade {
-    text-align: center;
-    margin-top: 50px;
-    font-size: 3rem;
+  #result {
+	color: white;
+	font-size: 1.5em; 
   }
+  
