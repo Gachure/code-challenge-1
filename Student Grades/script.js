@@ -1,27 +1,35 @@
 function calculateGrade() {
-	const marksInput = document.getElementById("marks");
-	const marks = parseFloat(marksInput.value);
+	// Fetching input values
+	var htmlMarks = parseFloat(document.getElementById("htmlMarks").value);
+	var jsMarks = parseFloat(document.getElementById("jsMarks").value);
+	var reactMarks = parseFloat(document.getElementById("reactMarks").value);
+	var rubyMarks = parseFloat(document.getElementById("rubyMarks").value);
   
-	if (isNaN(marks) || marks < 0 || marks > 100) {
-	  document.getElementById("result").textContent = "Invalid input. Marks should be between 0 and 100.";
+	// Validating input
+	if (isNaN(htmlMarks) || isNaN(jsMarks) || isNaN(reactMarks) || isNaN(rubyMarks)) {
+	  document.getElementById("result").innerHTML = "Please enter valid marks for all subjects.";
 	  return;
 	}
   
-	let grade;
+	// Calculating total marks and percentage
+	var totalMarks = htmlMarks + jsMarks + reactMarks + rubyMarks;
+	var percentage = (totalMarks / 400) * 100;
   
-	if (marks > 79) {
-	  grade = 'A';
-	} else if (marks >= 60) {
-	  grade = 'B';
-	} else if (marks >= 50) {
-	  grade = 'C';
-	} else if (marks >= 40) {
-	  grade = 'D';
+	// Determining grade based on percentage
+	var grade = "";
+	if (percentage > 79) {
+	  grade = "A";
+	} else if (percentage >= 60) {
+	  grade = "B";
+	} else if (percentage >= 50) {
+	  grade = "C";
+	} else if (percentage >= 40) {
+	  grade = "D";
 	} else {
-	  grade = 'E';
+	  grade = "E";
 	}
   
-	const percentage = (marks / 100) * 100;
-	document.getElementById("result").textContent = `Percentage: ${percentage.toFixed(2)}%, Grade: ${grade}`;
+	// Displaying the result
+	document.getElementById("result").innerHTML = "Total Marks: " + totalMarks.toFixed(2) + "<br>Percentage: " + percentage.toFixed(2) + "%" + "<br>Grade: " + grade;
   }
   

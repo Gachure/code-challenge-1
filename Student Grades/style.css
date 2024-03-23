@@ -1,35 +1,40 @@
 body {
-	background-color: black; 
-	display: flex;
-	justify-content: center;
-	align-items: center; 
-	height: 100vh; 
-	margin: 0;
+    background-color: blue;
+    font-weight: bold; 
   }
   
   .container {
-	text-align: center;
-	padding: 20px;
-	border: 2px solid white;
-	
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px; 
+    background-color: white;
+    border-radius: 10px;
   }
   
-  h2 {
-	font-size: 2em; 
-	color: white; 
+  .container h2 {
+    text-align: center;
   }
   
-  input[type="number"] {
-	width: 100px; 
+  .container div {
+    margin-bottom: 10px;
   }
   
-  button {
-	padding: 10px 20px;
-	font-size: 1em; 
+  .container label {
+    display: inline-block;
+    width: 150px;
+  }
+  
+  .container input[type="number"] {
+    width: 100px; 
+  }
+  
+  .container button {
+    display: block; 
+    margin: 0 auto; 
+    padding: 10px 20px;
   }
   
   #result {
-	color: white;
-	font-size: 1.5em; 
+    text-align: center; 
   }
   
