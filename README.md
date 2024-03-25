@@ -1,4 +1,5 @@
-# Code challenge 1
+# TItle
+Code Challenge 1
 
 It tels the student to create a grade generator,speed detector and net salary calculator
 
